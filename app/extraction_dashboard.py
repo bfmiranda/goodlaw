@@ -81,7 +81,7 @@ with col1:
         )]
     )
     fig_natureza.update_layout(height=400, showlegend=True)
-    st.plotly_chart(fig_natureza, use_container_width=True)
+    st.plotly_chart(fig_natureza, width='stretch')
 
 with col2:
     # Tabela com confiança
@@ -99,7 +99,7 @@ with col2:
             "Confiança Média": f"{conf:.3f}"
         })
     
-    st.dataframe(rows, use_container_width=True)
+    st.dataframe(rows, width='stretch')
 
 # ============================================================================
 # ENTIDADES (SIGLAS)
@@ -113,8 +113,9 @@ col1, col2 = st.columns(2)
 with col1:
     # Top 20 siglas
     siglas_data = relatorio['entidades']['siglas_mais_comuns'][:20]
-    siglas_nomes = [s[0] for s in siglas_data]
-    siglas_counts = [s[1] for s in siglas_data]
+    # Pode ser dict (JSON) ou tuple (Python)
+    siglas_nomes = [s['sigla'] if isinstance(s, dict) else s[0] for s in siglas_data]
+    siglas_counts = [s['contagem'] if isinstance(s, dict) else s[1] for s in siglas_data]
     
     fig_siglas = go.Figure(
         data=[go.Bar(
@@ -132,7 +133,7 @@ with col1:
         height=500,
         margin=dict(l=100)
     )
-    st.plotly_chart(fig_siglas, use_container_width=True)
+    st.plotly_chart(fig_siglas, width='stretch')
 
 with col2:
     # Top entidades
@@ -145,7 +146,7 @@ with col2:
             "Menções": ent['contagem'],
             "% Total": f"{ent['percentual']:.2f}%"
         })
-    st.dataframe(rows, use_container_width=True)
+    st.dataframe(rows, width='stretch')
 
 # ============================================================================
 # TEXTO
@@ -190,7 +191,7 @@ fig_palavras = px.bar(
     title="Frequência de Palavras",
 )
 fig_palavras.update_layout(height=500, margin=dict(l=150))
-st.plotly_chart(fig_palavras, use_container_width=True)
+st.plotly_chart(fig_palavras, width='stretch')
 
 # ============================================================================
 # HIERARQUIA
@@ -229,7 +230,7 @@ with col1:
         yaxis_title="Quantidade de Cards",
         height=400,
     )
-    st.plotly_chart(fig_prof, use_container_width=True)
+    st.plotly_chart(fig_prof, width='stretch')
 
 with col2:
     # Relacionamentos
@@ -256,7 +257,7 @@ with col2:
         height=300,
         margin=dict(l=150)
     )
-    st.plotly_chart(fig_rel, use_container_width=True)
+    st.plotly_chart(fig_rel, width='stretch')
 
 # ============================================================================
 # CONFIANÇA
@@ -295,7 +296,7 @@ with col1:
         yaxis_title="Quantidade de Cards",
         height=400,
     )
-    st.plotly_chart(fig_conf_tipo, use_container_width=True)
+    st.plotly_chart(fig_conf_tipo, width='stretch')
 
 with col2:
     # Penalidades
@@ -325,7 +326,7 @@ fig_qual = go.Figure(
     )]
 )
 fig_qual.update_layout(height=400)
-st.plotly_chart(fig_qual, use_container_width=True)
+st.plotly_chart(fig_qual, width='stretch')
 
 col1, col2, col3 = st.columns(3)
 with col1:
