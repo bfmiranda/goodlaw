@@ -22,7 +22,7 @@ STOPWORDS_PT = {
     "de", "para", "com", "um", "uma", "o", "a", "os", "as",
     "que", "é", "e", "ou", "se", "não", "em", "por", "do",
     "da", "dos", "das", "na", "no", "nas", "nos", "à", "ao",
-    "aos", "este", "esse", "aquele", "este", "essa", "essa",
+    "aos", "aqueles", "esse", "aquele", "este", "isto", "essa",
 }
 
 
