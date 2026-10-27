@@ -87,3 +87,6 @@ dmypy.json
 node_modules/
 .npm
 .yarn
+
+raw_files/
+
