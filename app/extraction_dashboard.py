@@ -17,9 +17,21 @@ st.markdown(
 @st.cache_data
 def carregar_relatorio():
     """Carrega relatório de extração."""
-    path = Path("data/relatorio_extracao.json")
-    if not path.exists():
-        st.error("⚠️ Relatório não encontrado. Execute scripts/gerar_relatorio.py primeiro.")
+    # Tenta múltiplos caminhos (local + cloud)
+    caminhos_possiveis = [
+        Path("data/relatorio_extracao.json"),
+        Path(__file__).parent.parent / "data" / "relatorio_extracao.json",
+    ]
+    
+    path = None
+    for caminho in caminhos_possiveis:
+        if caminho.exists():
+            path = caminho
+            break
+    
+    if not path:
+        st.error("⚠️ Relatório não encontrado em:\n" + "\n".join(str(p) for p in caminhos_possiveis))
+        st.info("Execute na raiz do projeto:\n`python scripts/gerar_relatorio.py --sample 5000 --json data/relatorio_extracao.json`")
         st.stop()
     
     with open(path) as f:
