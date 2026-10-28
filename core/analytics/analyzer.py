@@ -25,6 +25,38 @@ STOPWORDS_PT = {
     "aos", "aqueles", "esse", "aquele", "este", "isto", "essa",
 }
 
+# Siglas/abreviaturas comuns que não são realmente entidades de negócio
+STOPWORDS_SIGLAS = {
+    # Preposições e conjunções
+    "POR", "PARA", "COM", "SEM", "ENTRE", "SOBRE", "ANTE",
+    "DE", "A", "O", "E", "OU", "QUE", "SE", "EM", "DO", "DA",
+    
+    # Interrogativas/demonstrativas
+    "CASO", "ONDE", "QUANDO", "QUAL", "COMO", "QUEM", "QUAL",
+    
+    # Palavras temporais
+    "ENQUANTO", "DURANTE", "DEPOIS", "ANTES", "ENTÃO", "ATRÁS",
+    
+    # Verbos comuns
+    "NECESSÁRIO", "NECESSITO", "NECESSITA", "DEVE", "PODEM",
+    "PODE", "PODIA", "PODERIA", "FAZER", "FEITO", "FAÇA", "FIZER",
+    "DAR", "DADO", "DÁ", "QUER", "QUEREMOS", "QUER", "SER",
+    "ESTÁ", "ESTÃO", "ESTÁ", "FORAM", "FORAM", "HAVERÁ",
+    
+    # Advérbios
+    "ASSIM", "AINDA", "TAMBÉM", "TALVEZ", "AQUI", "ALI", "LÁ",
+    "CÁ", "ACOLÁ", "AGORA", "JÁ", "LOGO", "NUNCA", "SEMPRE",
+    "AQUI", "AÍ", "CIMA", "BAIXO",
+    
+    # Quantificadores
+    "MAIS", "MENOS", "MUITO", "POUCO", "TODO", "NADA", "TUDO",
+    "CADA", "QUALQUER", "ALGUM", "NENHUM",
+    
+    # Artigos
+    "UM", "UMA", "UNS", "UMAS", "OS", "AS",
+}
+
+
 
 class AnalisadorExtracao:
     """Analisa dados extraídos e gera relatório completo."""
@@ -94,13 +126,18 @@ class AnalisadorExtracao:
         )
 
     def _analisar_entidades(self, cards: list[CardExtraido]) -> EstatisticasEntidades:
-        """Analisa entidades extraídas."""
+        """Analisa entidades extraídas, filtrando stop words."""
         todas_entidades = []
         counter_entidades = Counter()
 
         for card in cards:
-            todas_entidades.extend(card.entidades)
-            counter_entidades.update(card.entidades)
+            # Filtrar stop words de siglas
+            entidades_filtradas = [
+                e for e in card.entidades 
+                if e.upper() not in STOPWORDS_SIGLAS
+            ]
+            todas_entidades.extend(entidades_filtradas)
+            counter_entidades.update(entidades_filtradas)
 
         top_50 = [
             FrequenciaItem(

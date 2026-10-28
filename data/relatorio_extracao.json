@@ -34,108 +34,108 @@
     "cards_sem_natureza_definida": 1613
   },
   "entidades": {
-    "total_entidades_unicas": 3041,
-    "total_mencoes": 14838,
+    "total_entidades_unicas": 3009,
+    "total_mencoes": 13136,
     "top_entidades": [
       {
         "entidade": "BB",
         "contagem": 721,
-        "percentual": 4.86
-      },
-      {
-        "entidade": "PARA",
-        "contagem": 412,
-        "percentual": 2.78
+        "percentual": 5.49
       },
       {
         "entidade": "PJ",
         "contagem": 357,
-        "percentual": 2.41
-      },
-      {
-        "entidade": "ENQUANTO",
-        "contagem": 248,
-        "percentual": 1.67
+        "percentual": 2.72
       },
       {
         "entidade": "PO",
         "contagem": 244,
-        "percentual": 1.64
+        "percentual": 1.86
       },
       {
         "entidade": "UX",
         "contagem": 243,
-        "percentual": 1.64
-      },
-      {
-        "entidade": "NECESSITO",
-        "contagem": 220,
-        "percentual": 1.48
+        "percentual": 1.85
       },
       {
         "entidade": "HU",
         "contagem": 206,
-        "percentual": 1.39
+        "percentual": 1.57
       },
       {
         "entidade": "CNPJ",
         "contagem": 191,
-        "percentual": 1.29
-      },
-      {
-        "entidade": "DE",
-        "contagem": 190,
-        "percentual": 1.28
-      },
-      {
-        "entidade": "QUE",
-        "contagem": 183,
-        "percentual": 1.23
+        "percentual": 1.45
       },
       {
         "entidade": "IA",
         "contagem": 175,
-        "percentual": 1.18
+        "percentual": 1.33
       },
       {
         "entidade": "API",
         "contagem": 146,
-        "percentual": 0.98
+        "percentual": 1.11
       },
       {
         "entidade": "TI",
         "contagem": 133,
-        "percentual": 0.9
+        "percentual": 1.01
       },
       {
         "entidade": "PF",
         "contagem": 131,
-        "percentual": 0.88
-      },
-      {
-        "entidade": "DA",
-        "contagem": 107,
-        "percentual": 0.72
+        "percentual": 1.0
       },
       {
         "entidade": "PM",
         "contagem": 107,
-        "percentual": 0.72
+        "percentual": 0.81
       },
       {
         "entidade": "QUERO",
         "contagem": 85,
-        "percentual": 0.57
+        "percentual": 0.65
       },
       {
         "entidade": "SISBB",
         "contagem": 80,
+        "percentual": 0.61
+      },
+      {
+        "entidade": "IIB",
+        "contagem": 75,
+        "percentual": 0.57
+      },
+      {
+        "entidade": "AA",
+        "contagem": 73,
+        "percentual": 0.56
+      },
+      {
+        "entidade": "CLIENTE",
+        "contagem": 71,
         "percentual": 0.54
       },
       {
-        "entidade": "COM",
-        "contagem": 75,
+        "entidade": "ALTA",
+        "contagem": 70,
+        "percentual": 0.53
+      },
+      {
+        "entidade": "STATUS",
+        "contagem": 67,
         "percentual": 0.51
+      },
+      {
+        "entidade": "DITEC",
+        "contagem": 67,
+        "percentual": 0.51
+      },
+      {
+        "entidade": "CPF",
+        "contagem": 65,
+        "percentual": 0.49
       }
     ],
     "siglas_mais_comuns": [
@@ -144,16 +144,8 @@
         "contagem": 721
       },
       {
-        "sigla": "PARA",
-        "contagem": 412
-      },
-      {
         "sigla": "PJ",
         "contagem": 357
-      },
-      {
-        "sigla": "ENQUANTO",
-        "contagem": 248
       },
       {
         "sigla": "PO",
@@ -164,24 +156,12 @@
         "contagem": 243
       },
       {
-        "sigla": "NECESSITO",
-        "contagem": 220
-      },
-      {
         "sigla": "HU",
         "contagem": 206
       },
       {
         "sigla": "CNPJ",
         "contagem": 191
-      },
-      {
-        "sigla": "DE",
-        "contagem": 190
-      },
-      {
-        "sigla": "QUE",
-        "contagem": 183
       },
       {
         "sigla": "IA",
@@ -198,6 +178,26 @@
       {
         "sigla": "PF",
         "contagem": 131
+      },
+      {
+        "sigla": "PM",
+        "contagem": 107
+      },
+      {
+        "sigla": "QUERO",
+        "contagem": 85
+      },
+      {
+        "sigla": "SISBB",
+        "contagem": 80
+      },
+      {
+        "sigla": "IIB",
+        "contagem": 75
+      },
+      {
+        "sigla": "AA",
+        "contagem": 73
       }
     ]
   },
