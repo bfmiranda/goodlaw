@@ -37,16 +37,16 @@ STOPWORDS_SIGLAS = {
     # Palavras temporais
     "ENQUANTO", "DURANTE", "DEPOIS", "ANTES", "ENTÃO", "ATRÁS",
     
-    # Verbos comuns
+    # Verbos comuns (incluindo conjugações de "querer")
     "NECESSÁRIO", "NECESSITO", "NECESSITA", "DEVE", "PODEM",
     "PODE", "PODIA", "PODERIA", "FAZER", "FEITO", "FAÇA", "FIZER",
-    "DAR", "DADO", "DÁ", "QUER", "QUEREMOS", "QUER", "SER",
-    "ESTÁ", "ESTÃO", "ESTÁ", "FORAM", "FORAM", "HAVERÁ",
+    "DAR", "DADO", "DÁ", "QUER", "QUERO", "QUEREMOS", "QUEREMOS", "QUERIA", "QUERERIA", "SER",
+    "ESTÁ", "ESTÃO", "ESTÃO", "FORAM", "FOI", "HAVERÁ", "TEM", "TEMOS",
     
     # Advérbios
     "ASSIM", "AINDA", "TAMBÉM", "TALVEZ", "AQUI", "ALI", "LÁ",
     "CÁ", "ACOLÁ", "AGORA", "JÁ", "LOGO", "NUNCA", "SEMPRE",
-    "AQUI", "AÍ", "CIMA", "BAIXO",
+    "AÍ", "CIMA", "BAIXO", "HOJE", "ONTEM",
     
     # Quantificadores
     "MAIS", "MENOS", "MUITO", "POUCO", "TODO", "NADA", "TUDO",

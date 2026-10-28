@@ -34,53 +34,53 @@
     "cards_sem_natureza_definida": 1613
   },
   "entidades": {
-    "total_entidades_unicas": 3009,
-    "total_mencoes": 13136,
+    "total_entidades_unicas": 3008,
+    "total_mencoes": 13051,
     "top_entidades": [
       {
         "entidade": "BB",
         "contagem": 721,
-        "percentual": 5.49
+        "percentual": 5.52
       },
       {
         "entidade": "PJ",
         "contagem": 357,
-        "percentual": 2.72
+        "percentual": 2.74
       },
       {
         "entidade": "PO",
         "contagem": 244,
-        "percentual": 1.86
+        "percentual": 1.87
       },
       {
         "entidade": "UX",
         "contagem": 243,
-        "percentual": 1.85
+        "percentual": 1.86
       },
       {
         "entidade": "HU",
         "contagem": 206,
-        "percentual": 1.57
+        "percentual": 1.58
       },
       {
         "entidade": "CNPJ",
         "contagem": 191,
-        "percentual": 1.45
+        "percentual": 1.46
       },
       {
         "entidade": "IA",
         "contagem": 175,
-        "percentual": 1.33
+        "percentual": 1.34
       },
       {
         "entidade": "API",
         "contagem": 146,
-        "percentual": 1.11
+        "percentual": 1.12
       },
       {
         "entidade": "TI",
         "contagem": 133,
-        "percentual": 1.01
+        "percentual": 1.02
       },
       {
         "entidade": "PF",
@@ -90,12 +90,7 @@
       {
         "entidade": "PM",
         "contagem": 107,
-        "percentual": 0.81
-      },
-      {
-        "entidade": "QUERO",
-        "contagem": 85,
-        "percentual": 0.65
+        "percentual": 0.82
       },
       {
         "entidade": "SISBB",
@@ -120,7 +115,7 @@
       {
         "entidade": "ALTA",
         "contagem": 70,
-        "percentual": 0.53
+        "percentual": 0.54
       },
       {
         "entidade": "STATUS",
@@ -135,6 +130,11 @@
       {
         "entidade": "CPF",
         "contagem": 65,
+        "percentual": 0.5
+      },
+      {
+        "entidade": "COPIADA",
+        "contagem": 64,
         "percentual": 0.49
       }
     ],
@@ -184,10 +184,6 @@
         "contagem": 107
       },
       {
-        "sigla": "QUERO",
-        "contagem": 85
-      },
-      {
         "sigla": "SISBB",
         "contagem": 80
       },
@@ -198,6 +194,10 @@
       {
         "sigla": "AA",
         "contagem": 73
+      },
+      {
+        "sigla": "CLIENTE",
+        "contagem": 71
       }
     ]
   },
