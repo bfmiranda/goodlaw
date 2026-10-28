@@ -1,0 +1,359 @@
+{
+  "total_cards": 5000,
+  "natureza": {
+    "distribuicao": {
+      "indefinida": 1613,
+      "experimentacao": 603,
+      "manutencao_corretiva": 642,
+      "melhoria": 379,
+      "desenvolvimento_novo": 1404,
+      "manutencao_evolutiva": 116,
+      "implantacao_configuracao": 77,
+      "operacao_suporte": 166
+    },
+    "distribuicao_pct": {
+      "indefinida": 32.26,
+      "experimentacao": 12.06,
+      "manutencao_corretiva": 12.84,
+      "melhoria": 7.58,
+      "desenvolvimento_novo": 28.08,
+      "manutencao_evolutiva": 2.32,
+      "implantacao_configuracao": 1.54,
+      "operacao_suporte": 3.32
+    },
+    "confianca_media_por_natureza": {
+      "indefinida": 0.1,
+      "experimentacao": 0.628,
+      "manutencao_corretiva": 0.81,
+      "melhoria": 0.691,
+      "desenvolvimento_novo": 0.67,
+      "manutencao_evolutiva": 0.807,
+      "implantacao_configuracao": 0.887,
+      "operacao_suporte": 0.866
+    },
+    "cards_sem_natureza_definida": 1613
+  },
+  "entidades": {
+    "total_entidades_unicas": 3041,
+    "total_mencoes": 14838,
+    "top_entidades": [
+      {
+        "entidade": "BB",
+        "contagem": 721,
+        "percentual": 4.86
+      },
+      {
+        "entidade": "PARA",
+        "contagem": 412,
+        "percentual": 2.78
+      },
+      {
+        "entidade": "PJ",
+        "contagem": 357,
+        "percentual": 2.41
+      },
+      {
+        "entidade": "ENQUANTO",
+        "contagem": 248,
+        "percentual": 1.67
+      },
+      {
+        "entidade": "PO",
+        "contagem": 244,
+        "percentual": 1.64
+      },
+      {
+        "entidade": "UX",
+        "contagem": 243,
+        "percentual": 1.64
+      },
+      {
+        "entidade": "NECESSITO",
+        "contagem": 220,
+        "percentual": 1.48
+      },
+      {
+        "entidade": "HU",
+        "contagem": 206,
+        "percentual": 1.39
+      },
+      {
+        "entidade": "CNPJ",
+        "contagem": 191,
+        "percentual": 1.29
+      },
+      {
+        "entidade": "DE",
+        "contagem": 190,
+        "percentual": 1.28
+      },
+      {
+        "entidade": "QUE",
+        "contagem": 183,
+        "percentual": 1.23
+      },
+      {
+        "entidade": "IA",
+        "contagem": 175,
+        "percentual": 1.18
+      },
+      {
+        "entidade": "API",
+        "contagem": 146,
+        "percentual": 0.98
+      },
+      {
+        "entidade": "TI",
+        "contagem": 133,
+        "percentual": 0.9
+      },
+      {
+        "entidade": "PF",
+        "contagem": 131,
+        "percentual": 0.88
+      },
+      {
+        "entidade": "DA",
+        "contagem": 107,
+        "percentual": 0.72
+      },
+      {
+        "entidade": "PM",
+        "contagem": 107,
+        "percentual": 0.72
+      },
+      {
+        "entidade": "QUERO",
+        "contagem": 85,
+        "percentual": 0.57
+      },
+      {
+        "entidade": "SISBB",
+        "contagem": 80,
+        "percentual": 0.54
+      },
+      {
+        "entidade": "COM",
+        "contagem": 75,
+        "percentual": 0.51
+      }
+    ],
+    "siglas_mais_comuns": [
+      {
+        "sigla": "BB",
+        "contagem": 721
+      },
+      {
+        "sigla": "PARA",
+        "contagem": 412
+      },
+      {
+        "sigla": "PJ",
+        "contagem": 357
+      },
+      {
+        "sigla": "ENQUANTO",
+        "contagem": 248
+      },
+      {
+        "sigla": "PO",
+        "contagem": 244
+      },
+      {
+        "sigla": "UX",
+        "contagem": 243
+      },
+      {
+        "sigla": "NECESSITO",
+        "contagem": 220
+      },
+      {
+        "sigla": "HU",
+        "contagem": 206
+      },
+      {
+        "sigla": "CNPJ",
+        "contagem": 191
+      },
+      {
+        "sigla": "DE",
+        "contagem": 190
+      },
+      {
+        "sigla": "QUE",
+        "contagem": 183
+      },
+      {
+        "sigla": "IA",
+        "contagem": 175
+      },
+      {
+        "sigla": "API",
+        "contagem": 146
+      },
+      {
+        "sigla": "TI",
+        "contagem": 133
+      },
+      {
+        "sigla": "PF",
+        "contagem": 131
+      }
+    ]
+  },
+  "texto": {
+    "comprimento_medio_cerne": 63.0,
+    "comprimento_medio_titulo": 63.2,
+    "comprimento_medio_descricao": 1502.0,
+    "cernes_vazios": 2,
+    "descricoes_vazias": 372,
+    "palavras_comuns_top_20": [
+      {
+        "palavra": "como",
+        "contagem": 3382,
+        "percentual": 0.9
+      },
+      {
+        "palavra": "descrição",
+        "contagem": 2648,
+        "percentual": 0.71
+      },
+      {
+        "palavra": "dados",
+        "contagem": 2230,
+        "percentual": 0.6
+      },
+      {
+        "palavra": "qual",
+        "contagem": 2209,
+        "percentual": 0.59
+      },
+      {
+        "palavra": "iniciativa",
+        "contagem": 2204,
+        "percentual": 0.59
+      },
+      {
+        "palavra": "quero",
+        "contagem": 1985,
+        "percentual": 0.53
+      },
+      {
+        "palavra": "cliente",
+        "contagem": 1832,
+        "percentual": 0.49
+      },
+      {
+        "palavra": "realizar",
+        "contagem": 1568,
+        "percentual": 0.42
+      },
+      {
+        "palavra": "história",
+        "contagem": 1420,
+        "percentual": 0.38
+      },
+      {
+        "palavra": "objetivo",
+        "contagem": 1382,
+        "percentual": 0.37
+      },
+      {
+        "palavra": "squad",
+        "contagem": 1292,
+        "percentual": 0.34
+      },
+      {
+        "palavra": "adicionais",
+        "contagem": 1286,
+        "percentual": 0.34
+      },
+      {
+        "palavra": "time",
+        "contagem": 1253,
+        "percentual": 0.33
+      },
+      {
+        "palavra": "valor",
+        "contagem": 1245,
+        "percentual": 0.33
+      },
+      {
+        "palavra": "quando",
+        "contagem": 1245,
+        "percentual": 0.33
+      },
+      {
+        "palavra": "notas",
+        "contagem": 1216,
+        "percentual": 0.32
+      },
+      {
+        "palavra": "problema",
+        "contagem": 1201,
+        "percentual": 0.32
+      },
+      {
+        "palavra": "deve",
+        "contagem": 1184,
+        "percentual": 0.32
+      },
+      {
+        "palavra": "comentários",
+        "contagem": 1169,
+        "percentual": 0.31
+      },
+      {
+        "palavra": "seja",
+        "contagem": 1134,
+        "percentual": 0.3
+      }
+    ]
+  },
+  "hierarquia": {
+    "profundidade_media": 1.43,
+    "profundidade_maxima": 7,
+    "profundidade_minima": 0,
+    "distribuicao_profundidade": {
+      "0": 1757,
+      "1": 1352,
+      "2": 533,
+      "3": 773,
+      "4": 550,
+      "6": 8,
+      "5": 23,
+      "7": 4
+    },
+    "cards_com_pai": 3243,
+    "cards_orfaos": 1757,
+    "cards_com_filhos": 612,
+    "cards_solitarios": 1538,
+    "okrs_raiz": 573,
+    "initiatives_por_okr_media": 23.81,
+    "historias_por_initiative_media": 10.77
+  },
+  "confianca": {
+    "confianca_media_tipo": 0.815,
+    "confianca_media_cerne": 0.95,
+    "confianca_media_natureza": 0.514,
+    "confianca_media_hierarquia": 0.792,
+    "distribuicao_confianca_tipo": {
+      "0.8": 3575,
+      "0.6": 1425
+    },
+    "distribuicao_confianca_cerne": {
+      "0.8": 4998,
+      "0.0": 2
+    },
+    "penalidade_media": 0.083,
+    "cards_com_penalidade": 1757
+  },
+  "qualidade": {
+    "cards_alta_confianca": 2080,
+    "cards_media_confianca": 2918,
+    "cards_baixa_confianca": 2,
+    "pct_alta": 41.6,
+    "pct_media": 58.36,
+    "pct_baixa": 0.04
+  }
+}

@@ -64,6 +64,8 @@ def salvar_relatorio_json(relatorio: RelatorioExtracao, caminho: Path) -> None:
             "confianca_media_cerne": round(relatorio.confianca.confianca_media_cerne, 3),
             "confianca_media_natureza": round(relatorio.confianca.confianca_media_natureza, 3),
             "confianca_media_hierarquia": round(relatorio.confianca.confianca_media_hierarquia, 3),
+            "distribuicao_confianca_tipo": relatorio.confianca.distribuicao_confianca_tipo,
+            "distribuicao_confianca_cerne": relatorio.confianca.distribuicao_confianca_cerne,
             "penalidade_media": round(relatorio.confianca.penalidade_media, 3),
             "cards_com_penalidade": relatorio.confianca.cards_com_penalidade,
         },
